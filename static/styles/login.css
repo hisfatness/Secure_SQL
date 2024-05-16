@@ -1,0 +1,91 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.fa-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    color: var(--white-1);
+    font-size: 175px;
+    background: var(--blue-2);
+    height: 275px;
+    width: 275px;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.failed {
+    background: var(--red-2);
+    color: var(--red-1);
+    outline: 1px solid var(--red-1);
+    margin: 5px;
+    padding: 5px 10px;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.text {
+    margin: 5px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+.text, .text:focus {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid var(--blue-1);
+}
+
+.show-password-wrapper {
+    margin-top: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#checkbox, #checkbox:focus {
+    outline: 0;
+    margin-right: 5px;
+}
+
+.button {
+    padding: 5px 30px;
+    margin-top: 20px;
+    float: right;
+    background: none;
+    border: 3px solid var(--blue-1);
+    text-transform: uppercase;
+    color: var(--blue-1);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button:hover {
+    background: var(--blue-1);
+    color: var(--white-1);
+    padding: 5px 25px;
+}
+
+p {
+    position: absolute;
+    bottom: 50px;
+}
+
+p a {
+    color: var(--blue-1);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+

@@ -1,0 +1,96 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.hamburger-line {
+    background: white;
+    height: 4px;
+    width: 37.5px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.links {
+    height: 100vh;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    right: -350px;
+    transition: .2s;
+    background: var(--white-1);
+}
+
+.link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px 40px;
+    height: 40px;
+}
+
+.link a {
+    color: var(--black-1);
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 10px 40px;
+    height: 40px;
+}
+
+.fa-times {
+    cursor: pointer;
+    height: 40px;
+} 
+
+.move {
+    transform: translateX(-350px);
+    box-shadow: 0 0 0 10000px rgb(0 0 0 / 30%);
+}
+
+table {
+    display: inline-block;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 500px;
+}
+
+th {
+    color: var(--white-1);
+    background: var(--blue-1);
+}
+
+tr:nth-child(1) {
+    background: var(--blue-1);
+}
+
+tr:nth-child(even) {
+    background: var(--white-2);
+}
+
+td, th {
+    margin: 0;
+    padding: 0 20px;
+    height: 40px;
+    text-align: center;
+    max-width: 200px;
+    overflow-x: auto;
+}

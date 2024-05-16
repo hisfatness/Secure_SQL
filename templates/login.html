@@ -1,0 +1,32 @@
+{% extends "root.html" %}
+
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/login.css') }}">
+{% endblock %}
+
+{% block content %}
+    <nav>
+      <ul>
+        <li>Database Security Model</li>
+      </ul>
+    </nav>
+
+    <form action="/login" method="POST">
+      <i class="fas fa-user"></i> 
+
+      {% if loginFailed %}
+        <div class="failed">
+          Invalid username or password
+        </div>
+      {% endif %}
+
+      <input type="text" placeholder="Username" name="username" class="text">      
+      <input type="password" placeholder="Password" name="password" id="password" class="text"> 
+      <div class="show-password-wrapper">
+        <input type="checkbox" onclick="showPassword()" id="checkbox">Show Password
+      </div>
+      <input type="submit" value="Login" class="button">
+    </form>
+
+    <p>Don't have an account? <a href="/signup">Sign Up</a></p> 
+{% endblock %}
